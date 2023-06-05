@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "749122456861",
+    "project_id": "afet-dff89",
+    "storage_bucket": "afet-dff89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749122456861:android:024512e89a0347aaeb25f4",
+        "android_client_info": {
+          "package_name": "com.furkan.mblproje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749122456861-lhft2oe80o7507kd445uc7q9obrctna8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnLMfU0KUS_QOxVxsToNoKifvA3hbMGF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749122456861-lhft2oe80o7507kd445uc7q9obrctna8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

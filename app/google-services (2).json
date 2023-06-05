@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "26389951805",
+    "project_id": "mblproje",
+    "storage_bucket": "mblproje.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26389951805:android:e1c50484751cd4df4f4154",
+        "android_client_info": {
+          "package_name": "com.furkan.mblproje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26389951805-b1c141l854kqg13kmpjiv90g2peccjhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6W_PJuDtetCFnj9vt6a-gEDunBxAaDKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26389951805-b1c141l854kqg13kmpjiv90g2peccjhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

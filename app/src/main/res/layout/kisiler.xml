@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/textViewContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acil Durum Kişilerim"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/EdtName"
+        android:layout_marginBottom="20dp"
+        android:textSize="24sp"
+        android:textColor="#B70404"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/EdtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        android:hint="Kişi Adı:"
+    />
+    <EditText
+        android:id="@+id/EdtNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/EdtName"
+        app:layout_constraintStart_toStartOf="@id/EdtName"
+        app:layout_constraintEnd_toEndOf="@id/EdtName"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent=".8"
+        android:hint="Numara:"
+        />
+
+    <Button
+        android:id="@+id/BtnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        app:layout_constraintStart_toStartOf="@id/EdtName"
+        app:layout_constraintEnd_toEndOf="@id/EdtName"
+        app:layout_constraintTop_toBottomOf="@id/EdtNumber"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#00DFA2"
+        />
+    <Button
+        android:id="@+id/BtnShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Konumumu Paylaş"
+        app:layout_constraintStart_toStartOf="@id/EdtName"
+        app:layout_constraintEnd_toEndOf="@id/EdtName"
+        app:layout_constraintTop_toBottomOf="@id/BtnSave"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#0079FF"
+        />
+
+
+
+    <LinearLayout
+        tools:context=".kisiler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHeight_percent=".5">
+        <ListView
+            android:id="@+id/KisiListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Uygulama logosu -->
+        <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/Logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintHeight_percent=".4"
+        app:layout_constraintWidth_percent=".8"
+        android:src="@drawable/logo"
+        />
+    <!-- Uygulama adı -->
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afet Yardımcım"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+        <!-- Ana menü seçenekleri -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayoutMenuOptions"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias=".8"
+            app:layout_constraintHeight_percent=".3">
+
+        <Button
+            android:id="@+id/buttonDisasters"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonWeather"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".4"
+            app:layout_constraintHeight_percent=".4"
+            android:layout_marginTop="10dp"
+            android:text="Afetler"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:backgroundTint="#B70404"/>
+
+        <Button
+            android:id="@+id/buttonWeather"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonDisasters"
+            app:layout_constraintTop_toTopOf="@id/buttonDisasters"
+            app:layout_constraintWidth_percent=".4"
+            app:layout_constraintHeight_percent=".4"
+            android:text="Hava Durumu"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:backgroundTint="#1B9C85"/>
+
+        <Button
+            android:id="@+id/buttonContact"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/buttonDisasters"
+            app:layout_constraintStart_toStartOf="@id/buttonDisasters"
+            app:layout_constraintEnd_toEndOf="@id/buttonWeather"
+            app:layout_constraintHeight_percent=".4"
+            android:text="Kişilerim"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:backgroundTint="#4C4C6D"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
